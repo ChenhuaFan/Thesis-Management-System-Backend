@@ -1,0 +1,19 @@
+/*
+for main elemnts.
+
+colors:
+    fonts:
+        normal: #1e1e1e
+    btns:
+        normal: #007acc
+
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 12px/1.5;
+    color: #1e1e1e;
+}
+
