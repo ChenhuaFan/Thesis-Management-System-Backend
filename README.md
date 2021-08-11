@@ -1,18 +1,45 @@
-# 论文后台
+# Thesis-Management-System
 
-#### 项目介绍
-就是论文后台了
+A front-end back-end separate system contains a web app and a NodeJS backend
 
-#### 软件架构
-软件架构很简单：通过 nginx 转发请求。将前端页面请求转发到8080端口（另一个 vue 项目）；再将 api 请求转发到3000后台服务（本系统）端口。从而可以有效解决跨域问题。
+#### Project Description
 
-#### 说明
+Thesis management system helps the College of Information Engineering at Huangshan University to manage graduate theses of senior students.
 
-1. 首先需要安装 nginx；参考：https://www.cnblogs.com/jiangwangxiang/p/8481661.html
-2. 再将 /files/nginx.conf 文件替换本地的 nginx 配置文件。参考上述链接。
-3. 将 files 文件夹中 的 db.sql导入到本地数据库中；并修改 /config/db.js 中的配置，以确保您可以连接到本地数据库。
+## Front-end
 
-#### 安装教程
+This is a Vue web application with iView UI, Vue Router, and VueX.
+
+#### Instructions
+
+1. nginx needs to be installed
+2. need to run the backend system in another project at the same time
+3. available usernames are Student:21509081011~21509081013 Teacher:1,2; password is 123456
+
+#### Installation & Usage
+> By default, you have understood and completed the instructions
+```shell
+git clone https://gitee.com/samchevia/paper.git
+cd paper
+npm install
+npm run-script serve
+```
+Open your browser localhost:81 and you can use the login page.
+
+## Back-end
+
+#### software architecture
+
+Requests are forwarded via nginx. The front-end page requests are forwarded to port 8080 (another vue project); then the api requests are forwarded to port 3000 of the backend service (this system). This effectively solves the cross-domain problem.
+
+#### instructions
+
+1. First, you need to install nginx; refer to https://www.cnblogs.com/jiangwangxiang/p/8481661.html
+2. Replace the /files/nginx.conf file with the local nginx configuration file. Refer to the link above. 3.
+3. Import the db.sql from the files folder into the local database; modify the configuration in /config/db.js to ensure that you can connect to the local database.
+
+#### installation tutorial
+
 ```shell
 git clone https://gitee.com/samchevia/background_of_paper.git
 cd background_of_paper
@@ -20,9 +47,9 @@ npm install
 npm run dev
 ```
 
-#### 参与贡献
+#### Contribute
 
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+1. Fork this project
+2. Create a new Feat_xxx branch
+3. Submit the code
+4. Create a new Pull Request
