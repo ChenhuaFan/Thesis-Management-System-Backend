@@ -19,7 +19,7 @@ This is a Vue web application with iView UI, Vue Router, and VueX.
 #### Installation & Usage
 > By default, you have understood and completed the instructions
 ```shell
-git clone https://gitee.com/samchevia/paper.git
+git clone https://github.com/ChenhuaFan/Thesis-Management-System-Frontend.git
 cd paper
 npm install
 npm run-script serve
@@ -41,7 +41,7 @@ Requests are forwarded via nginx. The front-end page requests are forwarded to p
 #### installation tutorial
 
 ```shell
-git clone https://gitee.com/samchevia/background_of_paper.git
+git clone https://github.com/ChenhuaFan/Thesis-Management-System-Backend.git
 cd background_of_paper
 npm install
 npm run dev
